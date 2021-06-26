@@ -5,7 +5,7 @@ class ListUserReceivedComplimentsController {
   async handle(request: Request, response: Response) {
     const listUserReceivedComplimentsService = new ListUserReceivedComplimentsService();
 
-    const compliments = listUserReceivedComplimentsService.execute(request.user_id);
+    const compliments = await listUserReceivedComplimentsService.execute(request.user_id);
 
     return response.json(compliments);
   }
