@@ -9,7 +9,7 @@ class AuthenticateUserController {
 
     const token = await authenticateUserService.execute({ email, password });
 
-    return response.json(token);
+    return response.header('x-access-token', token).end();
   }
 }
 
