@@ -10,6 +10,8 @@ A aplicação inclui o cadastro de usuários, tags e elogios.
 ## Funcionamento
 
 - Clone o repositório
+- Crie um arquivo .env baseado no .env.example
+- Crie um Segredo para a geração de token e coloque no arquivo .env
 - Rode `yarn` para baixar as dependências
 - Rode `yarn typeorm migration:run` para criar as tabelas do banco de dados.
 - Rode o `yarn dev` para iniciar a aplicação.
